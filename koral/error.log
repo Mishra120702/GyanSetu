@@ -1,0 +1,545 @@
+[04-Feb-2026 11:21:58 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u621399201_koral`.`test_attempts`, CONSTRAINT `test_attempts_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `test_portal_students` (`student_id`) ON DELETE CASCADE) in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php:116
+Stack trace:
+#0 /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php(116): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php on line 116
+[04-Feb-2026 11:22:06 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u621399201_koral`.`test_attempts`, CONSTRAINT `test_attempts_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `test_portal_students` (`student_id`) ON DELETE CASCADE) in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php:116
+Stack trace:
+#0 /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php(116): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php on line 116
+[04-Feb-2026 11:22:30 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u621399201_koral`.`test_attempts`, CONSTRAINT `test_attempts_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `test_portal_students` (`student_id`) ON DELETE CASCADE) in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php:116
+Stack trace:
+#0 /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php(116): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php on line 116
+[04-Feb-2026 11:22:36 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u621399201_koral`.`test_attempts`, CONSTRAINT `test_attempts_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `test_portal_students` (`student_id`) ON DELETE CASCADE) in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php:116
+Stack trace:
+#0 /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php(116): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php on line 116
+[04-Feb-2026 11:52:36 Asia/Kolkata] Session User ID: 373
+[04-Feb-2026 11:52:36 Asia/Kolkata] Session User Role: student
+[04-Feb-2026 11:52:36 Asia/Kolkata] GET test_id: 83
+[04-Feb-2026 11:52:36 Asia/Kolkata] Processing test ID: 83
+[04-Feb-2026 11:52:36 Asia/Kolkata] Student ID: STD310
+[04-Feb-2026 11:52:36 Asia/Kolkata] Current time (IST): 2026-02-04 11:52:36
+[04-Feb-2026 11:52:36 Asia/Kolkata] Fetching test details for ID: 83
+[04-Feb-2026 11:52:36 Asia/Kolkata] Test found: TEST DEMO
+[04-Feb-2026 11:52:36 Asia/Kolkata] Test status: active
+[04-Feb-2026 11:52:36 Asia/Kolkata] Test start: 2026-02-04 10:13:00
+[04-Feb-2026 11:52:36 Asia/Kolkata] Test end: 2026-02-11 10:13:00
+[04-Feb-2026 11:52:36 Asia/Kolkata] Error creating/checking test attempt: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u621399201_koral`.`test_attempts`, CONSTRAINT `test_attempts_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `test_portal_students` (`student_id`) ON DELETE CASCADE)
+[04-Feb-2026 11:58:08 Asia/Kolkata] Processing test ID: 83
+[04-Feb-2026 11:58:08 Asia/Kolkata] Student ID: STD310
+[04-Feb-2026 11:58:08 Asia/Kolkata] Current time (IST): 2026-02-04 11:58:08
+[04-Feb-2026 11:58:08 Asia/Kolkata] Test found: TEST DEMO
+[04-Feb-2026 11:58:08 Asia/Kolkata] Test status: active
+[04-Feb-2026 11:58:08 Asia/Kolkata] Creating new attempt at: 2026-02-04 11:58:08
+[04-Feb-2026 11:58:08 Asia/Kolkata] test_attempts table structure: Array
+(
+    [0] => Array
+        (
+            [Field] => id
+            [Type] => int(11)
+            [Null] => NO
+            [Key] => PRI
+            [Default] => 
+            [Extra] => auto_increment
+        )
+
+    [1] => Array
+        (
+            [Field] => test_id
+            [Type] => int(11)
+            [Null] => NO
+            [Key] => MUL
+            [Default] => 
+            [Extra] => 
+        )
+
+    [2] => Array
+        (
+            [Field] => student_id
+            [Type] => varchar(50)
+            [Null] => NO
+            [Key] => MUL
+            [Default] => 
+            [Extra] => 
+        )
+
+    [3] => Array
+        (
+            [Field] => start_time
+            [Type] => datetime
+            [Null] => NO
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [4] => Array
+        (
+            [Field] => end_time
+            [Type] => datetime
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [5] => Array
+        (
+            [Field] => submitted_at
+            [Type] => datetime
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [6] => Array
+        (
+            [Field] => status
+            [Type] => enum('in_progress','submitted','timed_out','abandoned')
+            [Null] => YES
+            [Key] => 
+            [Default] => in_progress
+            [Extra] => 
+        )
+
+    [7] => Array
+        (
+            [Field] => total_questions
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [8] => Array
+        (
+            [Field] => attempted_questions
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [9] => Array
+        (
+            [Field] => correct_answers
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [10] => Array
+        (
+            [Field] => obtained_marks
+            [Type] => decimal(5,2)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0.00
+            [Extra] => 
+        )
+
+    [11] => Array
+        (
+            [Field] => percentage
+            [Type] => decimal(5,2)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0.00
+            [Extra] => 
+        )
+
+    [12] => Array
+        (
+            [Field] => result
+            [Type] => enum('pass','fail','pending')
+            [Null] => YES
+            [Key] => 
+            [Default] => pending
+            [Extra] => 
+        )
+
+    [13] => Array
+        (
+            [Field] => ip_address
+            [Type] => varchar(45)
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [14] => Array
+        (
+            [Field] => user_agent
+            [Type] => text
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [15] => Array
+        (
+            [Field] => asd_exam_id
+            [Type] => varchar(12)
+            [Null] => YES
+            [Key] => MUL
+            [Default] => 
+            [Extra] => 
+        )
+
+    [16] => Array
+        (
+            [Field] => tab_switches
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [17] => Array
+        (
+            [Field] => warnings_count
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [18] => Array
+        (
+            [Field] => is_malpractice
+            [Type] => tinyint(1)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [19] => Array
+        (
+            [Field] => malpractice_reason
+            [Type] => varchar(255)
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [20] => Array
+        (
+            [Field] => penalty_applied
+            [Type] => tinyint(1)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [21] => Array
+        (
+            [Field] => final_status
+            [Type] => enum('normal','auto_submitted','malpractice','abandoned')
+            [Null] => YES
+            [Key] => 
+            [Default] => normal
+            [Extra] => 
+        )
+
+    [22] => Array
+        (
+            [Field] => malpractice_count
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [23] => Array
+        (
+            [Field] => updated_at
+            [Type] => datetime
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+)
+
+[04-Feb-2026 11:58:08 Asia/Kolkata] CRITICAL ERROR creating/checking test attempt: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u621399201_koral`.`test_attempts`, CONSTRAINT `test_attempts_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `test_portal_students` (`student_id`) ON DELETE CASCADE)
+[04-Feb-2026 11:58:08 Asia/Kolkata] Test ID: 83
+[04-Feb-2026 11:58:08 Asia/Kolkata] Student ID: STD310
+[04-Feb-2026 11:58:08 Asia/Kolkata] PHP Warning:  Undefined array key "id" in /home/u621399201/domains/sthub.co.in/public_html/student_test/take_test.php on line 243
+[04-Feb-2026 11:58:08 Asia/Kolkata] Student DB ID: 
+[04-Feb-2026 11:58:08 Asia/Kolkata] Available columns: id, test_id, student_id, start_time, end_time, submitted_at, status, total_questions, attempted_questions, correct_answers, obtained_marks, percentage, result, ip_address, user_agent, asd_exam_id, tab_switches, warnings_count, is_malpractice, malpractice_reason, penalty_applied, final_status, malpractice_count, updated_at
+[04-Feb-2026 11:58:35 Asia/Kolkata] Processing test ID: 83
+[04-Feb-2026 11:58:35 Asia/Kolkata] Student ID: STD310
+[04-Feb-2026 11:58:35 Asia/Kolkata] Current time (IST): 2026-02-04 11:58:35
+[04-Feb-2026 11:58:35 Asia/Kolkata] Test found: TEST DEMO
+[04-Feb-2026 11:58:35 Asia/Kolkata] Test status: active
+[04-Feb-2026 11:58:35 Asia/Kolkata] Creating new attempt at: 2026-02-04 11:58:35
+[04-Feb-2026 11:58:35 Asia/Kolkata] test_attempts table structure: Array
+(
+    [0] => Array
+        (
+            [Field] => id
+            [Type] => int(11)
+            [Null] => NO
+            [Key] => PRI
+            [Default] => 
+            [Extra] => auto_increment
+        )
+
+    [1] => Array
+        (
+            [Field] => test_id
+            [Type] => int(11)
+            [Null] => NO
+            [Key] => MUL
+            [Default] => 
+            [Extra] => 
+        )
+
+    [2] => Array
+        (
+            [Field] => student_id
+            [Type] => varchar(50)
+            [Null] => NO
+            [Key] => MUL
+            [Default] => 
+            [Extra] => 
+        )
+
+    [3] => Array
+        (
+            [Field] => start_time
+            [Type] => datetime
+            [Null] => NO
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [4] => Array
+        (
+            [Field] => end_time
+            [Type] => datetime
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [5] => Array
+        (
+            [Field] => submitted_at
+            [Type] => datetime
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [6] => Array
+        (
+            [Field] => status
+            [Type] => enum('in_progress','submitted','timed_out','abandoned')
+            [Null] => YES
+            [Key] => 
+            [Default] => in_progress
+            [Extra] => 
+        )
+
+    [7] => Array
+        (
+            [Field] => total_questions
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [8] => Array
+        (
+            [Field] => attempted_questions
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [9] => Array
+        (
+            [Field] => correct_answers
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [10] => Array
+        (
+            [Field] => obtained_marks
+            [Type] => decimal(5,2)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0.00
+            [Extra] => 
+        )
+
+    [11] => Array
+        (
+            [Field] => percentage
+            [Type] => decimal(5,2)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0.00
+            [Extra] => 
+        )
+
+    [12] => Array
+        (
+            [Field] => result
+            [Type] => enum('pass','fail','pending')
+            [Null] => YES
+            [Key] => 
+            [Default] => pending
+            [Extra] => 
+        )
+
+    [13] => Array
+        (
+            [Field] => ip_address
+            [Type] => varchar(45)
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [14] => Array
+        (
+            [Field] => user_agent
+            [Type] => text
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [15] => Array
+        (
+            [Field] => asd_exam_id
+            [Type] => varchar(12)
+            [Null] => YES
+            [Key] => MUL
+            [Default] => 
+            [Extra] => 
+        )
+
+    [16] => Array
+        (
+            [Field] => tab_switches
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [17] => Array
+        (
+            [Field] => warnings_count
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [18] => Array
+        (
+            [Field] => is_malpractice
+            [Type] => tinyint(1)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [19] => Array
+        (
+            [Field] => malpractice_reason
+            [Type] => varchar(255)
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+    [20] => Array
+        (
+            [Field] => penalty_applied
+            [Type] => tinyint(1)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [21] => Array
+        (
+            [Field] => final_status
+            [Type] => enum('normal','auto_submitted','malpractice','abandoned')
+            [Null] => YES
+            [Key] => 
+            [Default] => normal
+            [Extra] => 
+        )
+
+    [22] => Array
+        (
+            [Field] => malpractice_count
+            [Type] => int(11)
+            [Null] => YES
+            [Key] => 
+            [Default] => 0
+            [Extra] => 
+        )
+
+    [23] => Array
+        (
+            [Field] => updated_at
+            [Type] => datetime
+            [Null] => YES
+            [Key] => 
+            [Default] => 
+            [Extra] => 
+        )
+
+)
+
+[04-Feb-2026 11:58:35 Asia/Kolkata] CRITICAL ERROR creating/checking test attempt: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`u621399201_koral`.`test_attempts`, CONSTRAINT `test_attempts_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `test_portal_students` (`student_id`) ON DELETE CASCADE)
+[04-Feb-2026 11:58:35 Asia/Kolkata] Test ID: 83
+[04-Feb-2026 11:58:35 Asia/Kolkata] Student ID: STD310
+[04-Feb-2026 11:58:35 Asia/Kolkata] Available columns: id, test_id, student_id, start_time, end_time, submitted_at, status, total_questions, attempted_questions, correct_answers, obtained_marks, percentage, result, ip_address, user_agent, asd_exam_id, tab_switches, warnings_count, is_malpractice, malpractice_reason, penalty_applied, final_status, malpractice_count, updated_at
+[04-Feb-2026 12:00:08 Asia/Kolkata] Processing test ID: 83
+[04-Feb-2026 12:00:08 Asia/Kolkata] Student ID: STD310
+[04-Feb-2026 12:00:08 Asia/Kolkata] Student ID STD310 not found in test_portal_students table

@@ -1,0 +1,23 @@
+course_name_or_id,date,start_time,end_time,topic,description
+6,01-06-2026,10:00,12:00,HTML & CSS Basics,Introduction to web development
+12,02-06-2026,14:00,16:00,Python Variables,Basic variables and types
+6,03-06-2026,10:00,12:00,CSS Flexbox,Layout techniques
+12,04-06-2026,14:00,16:00,Control Flow,If statements and loops
+6,05-06-2026,10:00,12:00,JavaScript Intro,JS basics and DOM
+6,08-06-2026,10:00,12:00,JS Functions,Functions and scope
+12,09-06-2026,14:00,16:00,Lists and Dictionaries,Data structures in Python
+6,10-06-2026,10:00,12:00,JS Events,Event handling in browser
+12,11-06-2026,14:00,16:00,Functions in Python,Defining functions
+6,12-06-2026,10:00,12:00,React Basics,Introduction to React
+6,15-06-2026,10:00,12:00,React Hooks,State and effects
+12,16-06-2026,14:00,16:00,Object Oriented Python,Classes and objects
+6,17-06-2026,10:00,12:00,Node.js Intro,Server side JavaScript
+12,18-06-2026,14:00,16:00,File Handling,Reading and writing files
+6,19-06-2026,10:00,12:00,Express.js,Building APIs
+6,22-06-2026,10:00,12:00,MongoDB Basics,NoSQL Databases
+12,23-06-2026,14:00,16:00,Exception Handling,Try-except blocks
+6,24-06-2026,10:00,12:00,Authentication,JWT and Auth
+12,25-06-2026,14:00,16:00,Python Modules,Importing and using modules
+6,26-06-2026,10:00,12:00,Deployment,Hosting apps
+6,29-06-2026,10:00,12:00,Full Stack Project,Integration
+12,30-06-2026,14:00,16:00,Python Project,Final project review

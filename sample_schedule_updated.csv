@@ -1,0 +1,4 @@
+course_name_or_id,date,start_time,end_time,topic,description
+PHP Mastery,2026-02-21,10:00,12:00,Introduction to PHP,Basic PHP concepts and syntax
+2,2026-02-22,14:00,16:00,Normalization,MySQL fundamentals
+JavaScript Basics,2026-02-23,09:00,11:00,Functions,Variables and functions

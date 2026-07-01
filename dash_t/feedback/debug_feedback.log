@@ -1,0 +1,810 @@
+2026-06-24 12:11:24
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B009"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B009"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 9
+
+2026-06-24 12:15:32
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B009"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B009"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 9
+
+2026-06-24 17:18:40
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B009"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B009"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 9
+
+2026-06-25 08:32:58
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003"]
+Student Feedback Params: ["B004","DUMMY_7895","B003"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 9
+
+2026-06-25 08:34:19
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003"]
+Student Feedback Params: ["B004","DUMMY_7895","B003"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 9
+
+2026-06-25 10:23:01
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 10:25:08
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 14:33:23
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 16:47:02
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 16:52:28
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 16:53:35
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:03:37
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:05:56
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:09:11
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:12:18
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:12:36
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:18:06
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:20:43
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:21:02
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:21:06
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:24:30
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:26:33
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:28:22
+Trainer Match IDs: [1,13]
+Assigned Batch IDs: ["B006","B007"]
+Student Feedback Params: ["B006","B007"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-25 17:34:07
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 17:35:35
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 17:35:46
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 18:33:47
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 19:15:02
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-25 20:31:33
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 08:34:50
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 08:35:40
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 09:17:21
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 09:47:29
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 09:48:34
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 09:52:53
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:15:17
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:18:11
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:27:40
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:31:38
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:38:20
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:39:31
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:41:48
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:44:44
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:49:20
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:58:07
+Trainer Match IDs: [2,14]
+Assigned Batch IDs: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Params: ["B004","DUMMY_7895","B003","B008"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 10
+
+2026-06-26 10:46:56
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+
+2026-06-29 06:23:50
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+
+2026-06-29 06:24:23
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+
+2026-06-29 09:23:48
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B059","B067","B066"]
+Student Feedback Params: ["B059","B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 1
+
+2026-06-29 09:46:26
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+
+2026-06-29 12:07:07
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+
+2026-06-29 12:39:33
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+
+2026-06-29 13:05:37
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+
+2026-06-30 10:31:29
+Trainer Match IDs: [30,492]
+Assigned Batch IDs: ["B067","B066"]
+Student Feedback Params: ["B067","B066"]
+Student Feedback Query: 
+    SELECT 
+        f.*, 
+        COALESCE(b.batch_name, f.batch_id) as actual_batch_name
+    FROM feedback f
+    LEFT JOIN batches b ON f.batch_id = b.batch_id
+    WHERE f.show_to_trainer = 1
+      AND f.batch_id IN (?,?)
+ ORDER BY f.date DESC LIMIT 0, 20
+Student Feedback Results Count: 0
+

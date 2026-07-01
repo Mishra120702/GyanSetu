@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Mishra - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Dark background */
+            color: #e2e8f0; /* Light text */
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-header {
+            position: relative;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: #6366f1; /* Accent color */
+            transition: width 0.3s ease;
+        }
+        .section-header:hover::after {
+            width: 120px;
+        }
+        .card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .icon {
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .icon:hover {
+            transform: scale(1.2) rotate(10deg);
+            color: #6366f1;
+        }
+        /* Gradient text effect */
+        .gradient-text {
+            background-image: linear-gradient(45deg, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+
+        /* Hero section particles animation */
+        .hero-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .particle {
+            position: absolute;
+            background: #6366f1;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: moveParticle 15s infinite linear;
+        }
+
+        @keyframes moveParticle {
+            0% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(100px, 150px) scale(0.8); }
+            50% { transform: translate(200px, 50px) scale(1.2); }
+            75% { transform: translate(50px, 200px) scale(0.9); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+
+        /* Custom icons using SVG */
+        .icon-svg {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLp+g+t0w5a2z2c1a+i/N2wP1m+s1m+A4w0h/zL0+Q+m1v+Lg+uN2t+F/R4l+w0/jW0W5v2W5+zQ=" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-800 bg-opacity-80 backdrop-blur-sm shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold gradient-text">Raj Mishra</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">About</a>
+                <a href="#experience" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Experience</a>
+                <a href="#education" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Education</a>
+                <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-screen flex items-center justify-center text-center pt-20 overflow-hidden">
+            <div class="hero-particles"></div>
+            <div class="relative z-10 p-8 rounded-xl bg-slate-800 bg-opacity-70 backdrop-blur-sm">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4 animate-fade-in">
+                    Hello, I'm <span class="gradient-text">Raj Mishra</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-8 animate-slide-up">
+                    A highly motivated Fresher QA passionate about <span class="text-indigo-300 font-medium">software quality and web development</span>.
+                </p>
+                <a href="#contact" class="inline-block px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-full shadow-lg transition-transform transform hover:scale-105 animate-bounce-in">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <h2 class="section-header">About Me</h2>
+            <div class="card p-8 text-lg leading-relaxed">
+                <p>Highly motivated and detail-oriented Fresher QA with a passion for ensuring software quality. Skilled in developing and executing comprehensive test plans, collaborating with developers to design automated test scripts, and tracking software issues and defects.</p>
+                <p class="mt-4">I also have strong experience in web development, having worked on responsive websites using HTML, CSS, JavaScript, PHP, and MySQL. I enjoy troubleshooting bugs, optimizing performance, and ensuring seamless user experiences.</p>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="py-16">
+            <h2 class="section-header">Work Experience</h2>
+            <div class="space-y-8">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-400">Internship at ASDN Cybernetics</h3>
+                    <p class="text-gray-400 italic mt-2">Web Development</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-gray-300">
+                        <li>Developing and maintaining responsive websites using HTML, CSS, JavaScript, PHP, and MySQL.</li>
+                        <li>Collaborating with the design and backend teams to ensure seamless integration of UI/UX with functional logic.</li>
+                        <li>Managing databases through phpMyAdmin, performing CRUD operations, and implementing security measures.</li>
+                        <li>Creating admin panels and dashboard interfaces for internal tools and client-side applications.</li>
+                        <li>Troubleshooting bugs, optimizing performance, and ensuring cross-browser compatibility.</li>
+                        <li>Learning and applying version control practices using Git.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16">
+            <h2 class="section-header">Education</h2>
+            <div class="space-y-8">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-400">Integrated MCA</h3>
+                    <p class="text-gray-400 italic">University of Kota</p>
+                    <p class="text-gray-300">2022 - Present</p>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-400">Diploma In Engineering (Computer Science)</h3>
+                    <p class="text-gray-400 italic">Government Polytechnic College, Kota</p>
+                    <p class="text-gray-300">2022</p>
+                    <p class="text-gray-300">Passed With First Division</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+            <h2 class="section-header">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-4">Technical Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Manual Testing</span>
+                        <span class="skill-tag">Test Planning & Execution</span>
+                        <span class="skill-tag">Test Case Development</span>
+                        <span class="skill-tag">Requirements Analysis</span>
+                        <span class="skill-tag">User Story Documentation</span>
+                        <span class="skill-tag">Test Documentation</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-4">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Attention to Detail</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Learning Agility</span>
+                        <span class="skill-tag">Analytical Thinking</span>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-indigo-400 mb-4">Other Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Language Proficiency (English, Hindi)</span>
+                        <span class="skill-tag">Travelling</span>
+                        <span class="skill-tag">Photography</span>
+                        <span class="skill-tag">Cycling</span>
+                        <span class="skill-tag">Music</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h2 class="section-header">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-400">Student Management Portal</h3>
+                    <p class="text-gray-400 italic mt-2">For ASDN Cybernetics</p>
+                    <p class="mt-4 text-gray-300">A web-based portal to manage student information, courses, and other administrative tasks. The project involved front-end and back-end development, ensuring a smooth and secure user experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+            <h2 class="section-header">Get in Touch</h2>
+            <div class="card p-8 text-center">
+                <p class="text-xl mb-6">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="mailto:mishraraj1207@gmail.com" class="flex items-center space-x-2 text-indigo-400 hover:text-indigo-300 transition-colors icon">
+                        <i class="fas fa-envelope text-3xl"></i>
+                        <span class="text-lg">mishraraj1207@gmail.com</span>
+                    </a>
+                    <a href="tel:+919462427558" class="flex items-center space-x-2 text-indigo-400 hover:text-indigo-300 transition-colors icon">
+                        <i class="fas fa-phone-alt text-3xl"></i>
+                        <span class="text-lg">+91 9462427558</span>
+                    </a>
+                    <a href="https://linkedin.com/in/raj-mishra-88756721a" target="_blank" class="flex items-center space-x-2 text-indigo-400 hover:text-indigo-300 transition-colors icon">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                        <span class="text-lg">raj-mishra-88756721a</span>
+                    </a>
+                    <a href="https://unstop.com/u/@mishraraj1207" target="_blank" class="flex items-center space-x-2 text-indigo-400 hover:text-indigo-300 transition-colors icon">
+                        <!-- Custom Unstop icon from SVG as it's not in Font Awesome -->
+                        <svg class="icon-svg w-8 h-8" viewBox="0 0 100 100">
+                            <path d="M50,0 C77.6,0 100,22.4 100,50 C100,77.6 77.6,100 50,100 C22.4,100 0,77.6 0,50 C0,22.4 22.4,0 50,0 Z M50,10 C27.1,10 8.3,27.1 8.3,50 C8.3,72.9 27.1,91.7 50,91.7 C72.9,91.7 91.7,72.9 91.7,50 C91.7,27.1 72.9,8.3 50,8.3 Z M50,20 C66.5,20 80,33.5 80,50 C80,66.5 66.5,80 50,80 C33.5,80 20,66.5 20,50 C20,33.5 33.5,20 50,20 Z M50,30 C61,30 70,39 70,50 C70,61 61,70 50,70 C39,70 30,61 30,50 C30,39 39,30 50,30 Z M50,40 C55.5,40 60,44.5 60,50 C60,55.5 55.5,60 50,60 C44.5,60 40,55.5 40,50 C40,44.5 44.5,40 50,40 Z"/>
+                        </svg>
+                        <span class="text-lg">@mishraraj1207</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-gray-400 py-6 text-center">
+        <p>&copy; 2024 Raj Mishra. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Animations and Interactions -->
+    <script>
+        // Custom animation classes for fade-in and slide-up
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+            @keyframes slideUp {
+                from { opacity: 0; transform: translateY(40px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-slide-up { animation: slideUp 1s ease-out 0.5s forwards; }
+            @keyframes bounceIn {
+                0% { transform: scale(0.5); opacity: 0; }
+                50% { transform: scale(1.1); opacity: 1; }
+                100% { transform: scale(1); }
+            }
+            .animate-bounce-in { animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s forwards; }
+            .skill-tag {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                background-color: #334155;
+                color: #e2e8f0;
+                border-radius: 9999px;
+                font-weight: 500;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                cursor: pointer;
+            }
+            .skill-tag:hover {
+                background-color: #6366f1;
+                transform: scale(1.05);
+            }
+        `;
+        document.head.appendChild(styleSheet);
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    entry.target.style.opacity = '1';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            observer.observe(section);
+        });
+
+        // Function to create hero particles
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            const size = Math.random() * 10 + 5;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            document.querySelector('.hero-particles').appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, 15000);
+        }
+        
+        setInterval(createParticle, 500);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

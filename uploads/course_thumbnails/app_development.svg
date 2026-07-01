@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="50%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Phone mockup center-left -->
+  <g transform="translate(180, 40)">
+    <rect x="0" y="0" width="160" height="300" rx="22" fill="#09090b" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+    <rect x="8" y="8" width="144" height="284" rx="16" fill="#18181b"/>
+    <!-- Notch -->
+    <rect x="45" y="8" width="70" height="12" rx="6" fill="#09090b"/>
+    <!-- Status bar -->
+    <text x="80" y="42" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="10" font-weight="bold">9:41 AM</text>
+    <!-- App header bar -->
+    <rect x="15" y="52" width="130" height="30" rx="6" fill="#f97316"/>
+    <text x="80" y="72" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="13" font-weight="bold">MyApp</text>
+    <!-- App grid icons -->
+    <rect x="18" y="95" width="55" height="50" rx="10" fill="#1e293b"/>
+    <text x="45" y="118" text-anchor="middle" fill="#38bdf8" font-family="Arial" font-size="20">☰</text>
+    <text x="45" y="135" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="8">Home</text>
+    <rect x="82" y="95" width="55" height="50" rx="10" fill="#1e293b"/>
+    <text x="109" y="118" text-anchor="middle" fill="#a855f7" font-family="Arial" font-size="20">★</text>
+    <text x="109" y="135" text-anchor="middle" fill="#64748b" font-family="Arial" font-size="8">Saved</text>
+    <!-- Content card -->
+    <rect x="18" y="158" width="119" height="70" rx="8" fill="#1e293b"/>
+    <rect x="18" y="158" width="119" height="22" rx="8" fill="#f97316" opacity="0.8"/>
+    <text x="77" y="174" text-anchor="middle" fill="#fff" font-family="Arial" font-size="10" font-weight="bold">Dashboard</text>
+    <rect x="25" y="188" width="80" height="8" rx="4" fill="#334155"/>
+    <rect x="25" y="202" width="55" height="8" rx="4" fill="#334155"/>
+    <rect x="25" y="216" width="70" height="8" rx="4" fill="#334155"/>
+    <!-- Bottom nav -->
+    <rect x="8" y="262" width="144" height="30" rx="0" fill="#09090b"/>
+    <text x="38" y="282" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Arial" font-size="16">⌂</text>
+    <text x="80" y="282" text-anchor="middle" fill="#f97316" font-family="Arial" font-size="16">✦</text>
+    <text x="122" y="282" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="Arial" font-size="16">⚙</text>
+  </g>
+
+  <!-- Second phone, rotated slightly for depth -->
+  <g transform="translate(390, 70) rotate(-8)">
+    <rect x="0" y="0" width="145" height="272" rx="20" fill="#09090b" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+    <rect x="7" y="7" width="131" height="258" rx="14" fill="#18181b"/>
+    <rect x="40" y="7" width="65" height="11" rx="5" fill="#09090b"/>
+    <rect x="14" y="40" width="117" height="28" rx="6" fill="#a855f7"/>
+    <text x="72" y="59" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="12" font-weight="bold">Flutter App</text>
+    <rect x="14" y="78" width="117" height="155" rx="6" fill="#0f172a"/>
+    <circle cx="72" cy="130" r="30" fill="none" stroke="#ec4899" stroke-width="3"/>
+    <circle cx="72" cy="130" r="18" fill="#ec4899" opacity="0.4"/>
+    <text x="72" y="136" text-anchor="middle" fill="#fff" font-family="Arial" font-size="22">▶</text>
+    <rect x="14" y="242" width="117" height="23" rx="6" fill="#0f172a"/>
+    <text x="72" y="258" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="9">Flutter · Dart · Firebase</text>
+  </g>
+
+  <!-- Floating labels -->
+  <rect x="560" y="100" width="140" height="36" rx="10" fill="rgba(0,0,0,0.35)"/>
+  <text x="630" y="124" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="bold">Flutter</text>
+  <rect x="560" y="155" width="140" height="36" rx="10" fill="rgba(0,0,0,0.35)"/>
+  <text x="630" y="179" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="bold">React Native</text>
+  <rect x="560" y="210" width="140" height="36" rx="10" fill="rgba(0,0,0,0.35)"/>
+  <text x="630" y="234" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="bold">Firebase</text>
+  <rect x="560" y="265" width="140" height="36" rx="10" fill="rgba(0,0,0,0.35)"/>
+  <text x="630" y="289" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="15" font-weight="bold">REST APIs</text>
+
+  <!-- Bottom label -->
+  <rect x="0" y="355" width="800" height="95" fill="rgba(0,0,0,0.45)"/>
+  <text x="400" y="400" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="2">APP DEVELOPMENT</text>
+  <text x="400" y="428" text-anchor="middle" fill="#fde68a" font-family="Arial, sans-serif" font-size="14">Flutter · React Native · Swift · Firebase</text>
+</svg>

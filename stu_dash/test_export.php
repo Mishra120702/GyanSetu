@@ -1,0 +1,1 @@
+<?php $_GET['batch_id']='B001'; $_GET['export']='weekly'; session_start(); $_SESSION['user_id']='7'; $_SESSION['user_role']='student'; include 'view_attendance.php'; ?>
